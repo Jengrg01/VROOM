@@ -1,0 +1,200 @@
+/* Home.css */
+.mainbody{
+    background-color: #020106;
+}
+.carousel-caption h5,
+.carousel-caption p {
+    color: white;
+}
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+    padding-bottom: 200px;
+    background-image: url('../ImagesFol/background1.jpg');
+    /* Path to your background image */
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    /* Center the background image */
+}
+
+.Name {
+    height: 80px;
+    width: 1000px;
+    position: relative;
+    left: 200px;
+    top: 50px;
+    /* background-color: rgb(150, 161, 161); */
+}
+.Title{
+    font-family: "Abril Fatface",serif;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 500;
+    color:rgb(253, 252, 250);
+    text-shadow: 8px 5px 7px rgb(48, 34, 100);
+}
+.sub-container {
+    height: 350px;
+    width: 800px;
+    position: relative;
+    left: 325px;
+    top: 110px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, rgba(37, 23, 50, 0.8), rgba(3, 57, 98, 0.8), rgba(58, 72, 112, 0.8), rgba(129, 92, 131, 0.8), rgba(150, 161, 161, 0.8));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(3, 21, 35, 0.6);
+    box-shadow: 0 10px 20px rgba(8, 39, 63, 0.2), inset 0 0 50px rgba(255, 255, 255, 0.1);
+}
+
+.home-image {
+    width: 100%;
+    /* Ensure the image fills its container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+#caro {
+    padding-top: 60px;
+    height: 600px;
+    width: 100%;
+
+}
+
+.arrows {
+    position: relative;
+    bottom: 320px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: relative;
+    top: 50;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: 10px;
+    /* Adjust as needed */
+}
+
+.carousel-control-next {
+    right: 10px;
+    /* Adjust as needed */
+}
+
+.carousel-item {
+    position: absolute;
+}
+
+.image {
+    position: relative;
+    left: 200px;
+    width: 70%;
+    height: 500px;
+}
+
+.col-lg-6{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+#Input1 {
+    position: relative;
+    top: 25px;
+}
+#Input2 {
+    position: relative;
+    top: 25px;
+}
+#Input3{
+    position: relative;
+    left: 650px;
+    top: -110px;
+}
+#Input4 {
+    position: relative;
+    left: 650px;
+    top: -110px;
+}
+#label1{
+    position: relative;
+    top: -5px;
+    left: 85px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #becfcf;
+}
+#label2 {
+    position: relative;
+    top: -25px;
+    left: 85px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #becfcf;;
+}
+#label3 {
+    position: relative;
+    top: -93px;
+    left: -185px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #becfcf;;
+}
+#label4 {
+    position: relative;
+    top: -83px;
+    left: -185px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #becfcf;
+}
+#textInput1{
+    position: relative;
+    top:-10px;
+    left: 85px ;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#textInput2 {
+    position: relative;
+    top: -25px;
+    left: 85px;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+#dateInput1 {
+    position: relative;
+    top: -60px;
+    left: -320px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#dateInput2{
+    position: relative;
+    top: -86px;
+    left: -185px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#rentbtn{
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 12px;
+    border-radius: 8%;
+    position: relative;
+    top: -160px;
+    left: 345px;
+}
+#rentbtn:hover{
+    background-color: rgba(0, 0, 0, 0.747) !important;
+    color: antiquewhite !important;
+}
+#btntext{
+    justify-content: center;
+    margin-top: -10px;
+}

@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.secondHeader{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #010c14e0;
+}
+.contactInfo{
+    position: relative;
+    margin-left: 160px;
+    color: #2982BC;
+}
+.foricons{
+    position: relative;
+    bottom: 23px;
+    margin-left: 1100px;
+
+}
+.socialIcon{
+    font-size: 20px;
+    justify-content: space-between;
+    padding-left: 15px;
+    color: #2982BC;
+}
+.socialIcon:hover {
+    color: #dddddd !important;
+}
+.navBar{
+    margin-top: -25px;
+}
+.navbar-nav .nav-link {
+    font-size: 18px;
+    font-family: 'Lora',serif;
+    color: #2982BC !important;
+}
+.nav-link:hover {
+    color: white !important;
+}
+.head{
+    width: 100%;
+    height:auto;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    width: 100%;
+}
+.logo {
+    height: 80px;
+    width: 120px;
+    margin-left: 40px;
+}
+button{
+    background-color: #7b7486 ;
+    border-radius: 50%;
+    height: 30px;
+    padding-bottom: 25px;
+    border: none;
+}
+#btn{
+    padding-bottom: 30px;
+}
+#btn:hover{
+    background-color:#1d5377 !important;
+}
+.nav-items{
+    justify-content: space-around;
+    padding-left: 50px;
+}
+.navigation{
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+li{
+    padding-left: 30px;
+}
+.signup{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color:#dddddd;
+    margin-top: -8px;
+}
