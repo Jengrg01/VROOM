@@ -1,8 +1,15 @@
-# React + Vite
+![image](https://github.com/Jengrg01/colab/assets/165886572/6c1da51f-f2b5-4fb6-b6f4-52e49e26d78b)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing Page and Booking UI
 
-Currently, two official plugins are available:
+![image](https://github.com/Jengrg01/colab/assets/165886572/ca248f6c-7dfd-4bf1-aa19-8d40f735070a)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Little Introduction
+
+![image](https://github.com/Jengrg01/colab/assets/165886572/151ad044-dd93-4a0c-9e21-2196ae112c03)
+
+Hot offers slideshow
+
+![image](https://github.com/Jengrg01/colab/assets/165886572/b283dece-ab63-4333-99a8-3cbd6f00ea70)
+
+Footer of our page
