@@ -1,0 +1,418 @@
+/* Home.css */
+
+.carousel-caption h5,
+.carousel-caption p {
+    color: white;
+}
+
+
+.home-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+    padding-bottom: 200px;
+    background-image: url('../ImagesFol/background1.jpg');
+    background-repeat: no-repeat;
+    /* Path to your background image */
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    /* Center the background image */
+}
+
+.Name {
+    height: 80px;
+    width: 1000px;
+    position: relative;
+    left: 200px;
+    top: 35px;
+    /* background-color: rgb(150, 161, 161); */
+}
+.Title{
+    font-family: "Abril Fatface",serif;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 500;
+    color:rgb(253, 252, 250);
+    text-shadow: 6px 3px 5px rgb(70, 69, 71);
+}
+.sub-container {
+    height: 350px;
+    width: 800px;
+    position: relative;
+    left: 320px;
+    top: 80px;
+    border-radius: 25px;
+    background: linear-gradient(135deg,#676E74);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(3, 21, 35, 0.6);
+    box-shadow: 0 10px 20px rgba(8, 39, 63, 0.2), inset 0 0 50px rgba(255, 255, 255, 0.1);
+}
+
+.home-image {
+    width: 100%;
+    /* Ensure the image fills its container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+#caro {
+    padding-top: 60px;
+    height: 600px;
+    width: 100%;
+
+}
+
+.arrows {
+    position: relative;
+    bottom: 320px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: relative;
+    top: 50;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: 10px;
+    /* Adjust as needed */
+}
+
+.carousel-control-next {
+    right: 10px;
+    /* Adjust as needed */
+}
+
+.carousel-item {
+    position: absolute;
+}
+
+.image {
+    position: relative;
+    left: 200px;
+    width: 70%;
+    height: 500px;
+}
+
+.col-lg-6{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+#Input1 {
+    position: relative;
+    top: 25px;
+}
+#Input2 {
+    position: relative;
+    top: 25px;
+}
+#Input3{
+    position: relative;
+    left: 650px;
+    top: -110px;
+}
+#Input4 {
+    position: relative;
+    left: 650px;
+    top: -110px;
+}
+#label1{
+    position: relative;
+    top: -5px;
+    left: 85px;
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 1px 0px 1px white;
+}
+#label2 {
+    position: relative;
+    top: -25px;
+    left: 85px;
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 1px 0px 1px white;
+}
+#label3 {
+    position: relative;
+    top: -100px;
+    left: -185px;
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 1px 0px 1px white;
+}
+#label4 {
+    position: relative;
+    top: -130px;
+    left: -185px;
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 1px 0px 1px white;
+}
+#textInput1{
+    position: relative;
+    top:-10px;
+    left: 85px ;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#textInput2 {
+    position: relative;
+    top: -25px;
+    left: 85px;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+#dateInput1 {
+    position: relative;
+    top: -80px;
+    left: -320px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#dateInput2{
+    position: relative;
+    top: -110px;
+    left: -185px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#pickUpDate{
+    position: relative;
+    top: -100px;
+    right: 180px;
+    border-radius: 1px;
+}
+#dropOffDate{
+    position: relative;
+    top:-135px;
+    right: 180px;
+    border-radius: 1px;
+}
+#rentbtn{
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    background-color: #484D50;
+    color: #000000 !important;
+    top: -220px;
+    left: 345px;
+}
+#rentbtn:hover{
+    background-color:#1F1F21 !important;
+    color: antiquewhite !important;
+}
+#btntext{
+    justify-content: center;
+    margin-top: -10px;
+    font-weight: 800;
+}
+
+.aboutimage img{
+    width: 100%;
+    height: 700px;
+}
+
+.aboutimage {
+    position: relative;
+    height: 700px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 700px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -400%);
+    font-weight: bolder;
+    /* Background color with transparency */
+    padding: 10px;
+    /* Adjust as needed */
+}
+
+.text-overlay p {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+}
+.image-container{
+    /* background-image: url('../ImagesFol/haha.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; */
+    background: linear-gradient(285deg, #B5C4CC, #272727, #0B0B0B, #121313);
+}
+.para-content{
+    text-align: center;
+    word-spacing: 2px;
+    margin-top: 80px;
+    padding:5px 170px ;
+    color: white;
+    font-weight: lighter;
+}
+
+#para-header{
+text-align: center;
+margin: 0;
+padding-top: 40px;
+color: white;
+}
+
+.how-to-header{
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
+    color: white;
+    }
+
+      .how-to-content {
+        display: flex;
+        align-items: center; /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+      }
+      
+      .icon-box {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 0 100px 100px; /* Add some space between icon boxes */
+        margin-top: 240px;
+      }
+
+      .Login-signuptext{
+       text-align: center;
+       position: relative;
+       bottom:100px;
+       right: 520px;
+      }
+
+      .Login-signuptext p {
+        color: white;
+      }
+
+      .pickup-text{
+        text-align: center;
+        position: relative;
+        bottom:130px;
+        right: 190px;
+       }
+ 
+       .pickup-text p {
+         color: white;
+       }
+
+       .drive-text{
+        text-align: center;
+        position: relative;
+        bottom: 185px;
+        left: 240px;
+       }
+
+       .drive-text p {
+        color: white;
+       }
+
+       .return-text{
+        text-align: center;
+        position: relative;
+        bottom:170px;
+        left: 580px;
+       }
+
+       .return-text p{
+        color: white;
+       }
+
+       .icon-box2{
+        margin-bottom: 20px;
+        position: relative;
+        right: 40px;
+        bottom: 30px;
+       }
+
+       .icon-box3{
+        margin-right: 20px;
+       }
+
+       .icon-box4{
+        position: relative;
+        left: 70px;
+        top: 60px;
+       }
+
+       .big-container{
+        background: linear-gradient(285deg, #B5C4CC, #272727, #0B0B0B,#121313);
+       }
+
+       .how-to-container {
+        position: relative;
+      }
+      
+      .icon-path {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: calc(100% - 160px); /* Adjust width as needed */
+        height: 2px; /* Adjust height as needed */
+        display: flex;
+        justify-content: space-between;
+      }
+      
+
+      
+      .icon-box-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .icon-box {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .hot {
+        text-align: center;
+        color: rgb(255, 0, 0); /* Initial color */
+        animation: colorChange 1s infinite alternate; /* Animation name, duration, iteration count, direction */
+    }
+    
+    @keyframes colorChange {
+        0% {
+            color: rgb(245, 239, 239); /* Starting color */
+        }
+        50% {
+            color: rgb(0, 0, 0); /* Middle color */
+        }
+        100% {
+            color: rgb(253, 253, 253); /* Ending color */
+        }
+    }
+    
+    #caro{
+        height: 700px;
+    }
+      
+      
+
+
+
+
