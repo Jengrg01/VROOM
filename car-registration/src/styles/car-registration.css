@@ -1,19 +1,18 @@
 .car-registration {
   font-family: Arial, sans-serif;
   width: 400px;
-  margin: 80px auto; /* Centering the form horizontally */
+  margin: 80px auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .car-registration h2 {
-  margin-top: 0;
   color: #333;
   text-align: center;
   margin-bottom: 20px;
+  font-size: 35px;
 }
 
 .car-registration form {
@@ -28,7 +27,7 @@
 
 .car-registration input {
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
@@ -40,6 +39,8 @@
   color: #fff;
   border: none;
   border-radius: 5px;
+  font-size: 20px; 
+
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -53,26 +54,18 @@
   margin-top: 20px;
 }
 
+.car-details-label {
+  display: block;
+  color: #333;
+  margin-bottom: 5px;
+}
+
 .car-registration .input-group {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.car-registration .car-details-label {
-  width: 100px;
-  margin-right: 20px;
-}
-
-.car-registration .car-details-label-Model {
-  width: 60px;
-  margin-right: 100px;
-}
-
-.car-registration .car-details-label-Year {
-  width: 50px;
-  margin-right: 100px;
-}
 .success-message {
   position: fixed;
   top: 50%;
@@ -90,38 +83,12 @@
   animation: fadeIn 0.5s ease forwards;
 }
 
-.success-message {
-  position: fixed;
-  top: 20px; /* Adjust top position as needed */
-  left: 50%;
-  transform: translateX(-50%);
-  background: linear-gradient(to right, #00c6ff, #0072ff);
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  
-}
-
-.success-message p {
-  margin: 0;
-  font-size: 18px;
-}
-
-.success-message::before {
-  content: "\2714"; /* Checkmark symbol */
-  font-size: 36px;
-  display: block;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
+/* Animation Keyframes */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateX(-50%) translateY(-20px) scale(0.5); /* Initial position above the screen */
   }
   to {
     opacity: 1;
-    transform: translateX(-50%) translateY(0) scale(1);
   }
 }

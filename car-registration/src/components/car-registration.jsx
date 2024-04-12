@@ -10,7 +10,11 @@ export function RegistrationForm() {
     carName: '',
     carMake: '',
     carModel: '',
-    carYear: ''
+    carYear: '',
+    engineCapacity: '', // Updated field name
+    totalSeats: '', // Updated field name
+    carType: '',
+    carImage: null
   });
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -20,6 +24,14 @@ export function RegistrationForm() {
     setUserData(prevState => ({
       ...prevState,
       [name]: value
+    }));
+  };
+
+  const handleImageChange = (e) => {
+    const imageFile = e.target.files[0];
+    setUserData(prevState => ({
+      ...prevState,
+      carImage: imageFile
     }));
   };
 
@@ -35,7 +47,11 @@ export function RegistrationForm() {
       carName: '',
       carMake: '',
       carModel: '',
-      carYear: ''
+      carYear: '',
+      engineCapacity: '',
+      totalSeats: '',
+      carType: '',
+      carImage: null
     });
 
     setTimeout(() => {
@@ -94,31 +110,43 @@ export function RegistrationForm() {
             onChange={handleChange}
             required
           />
-          <label className="car-details-label">Make Year:</label>
+          
+          
+          <label className="car-details-label">Engine Capacity:</label>
           <input
             type="text"
-            id="carMake"
-            name="carMake"
-            value={userData.carMake}
+            id="engineCapacity"
+            name="engineCapacity"
+            value={userData.engineCapacity}
             onChange={handleChange}
             required
           />
-          <label className="car-details-label-Model">Model:</label>
+          <label className="car-details-label">Total Seats:</label>
           <input
             type="text"
-            id="carModel"
-            name="carModel"
-            value={userData.carModel}
+            id="totalSeats"
+            name="totalSeats"
+            value={userData.totalSeats}
             onChange={handleChange}
             required
           />
-          <label className="car-details-label-Year">Year:</label>
+          <label className="car-details-label">Car Type:</label>
           <input
             type="text"
-            id="carYear"
-            name="carYear"
-            value={userData.carYear}
+            id="carType"
+            name="carType"
+            value={userData.carType}
             onChange={handleChange}
+            required
+          />
+          {/* Image Upload Field */}
+          <label className="car-details-image">Upload Car Image:</label>
+          <input
+            type="file"
+            id="carImage"
+            name="carImage"
+            accept="image/*"
+            onChange={handleImageChange}
             required
           />
           <button type="submit">Submit</button>
