@@ -9,17 +9,48 @@ const Register = () => {
   const [age, setAge] = useState('');
   const [address, setAddress] = useState('');
   const [accountType, setAccountType] = useState('');
-  const [showPopup, setShowPopup] = useState(false); // State to control popup visibility
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3001/register', { name, phoneNumber, age, address, accountType})
-      .then(result => {
-        console.log(result); 
-        setShowPopup(true); // Show the popup upon successful registration
-      })
-      .catch(err => console.log(err));
+    
+    // Check if any field is empty
+    if (!name || !phoneNumber || !age || !address || !accountType || !password) {
+      alert('Please fill in all fields');
+      return;
+    }
+
+    // Make API call to register user
+    axios.post('http://localhost:3001/register', { 
+      name, 
+      phoneNumber, 
+      age, 
+      address, 
+      accountType, 
+      password
+    })
+    .then(response => {
+      console.log(response.data); // Log the response data
+      setShowPopup(true); // Show the popup on successful registration
+      // Clear form fields
+      setName('');
+      setPhoneNumber('');
+      setAge('');
+      setAddress('');
+      setAccountType('');
+      setPassword('');
+    })
+    .catch(error => {
+      console.error('Error registering user:', error);
+      alert('Error registering user. Please try again.'); // Show an alert for error
+    });
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(prevState => !prevState);
   };
 
   return (
@@ -34,6 +65,7 @@ const Register = () => {
               id='name'
               placeholder='Enter name'
               className='form-control'
+              value={name}
               onChange={(e) => setName(e.target.value)}
             />
           </div>
@@ -44,6 +76,7 @@ const Register = () => {
               id='phoneNumber'
               placeholder='Enter phone number'
               className='form-control'
+              value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
             />
           </div>
@@ -54,6 +87,7 @@ const Register = () => {
               id='age'
               placeholder='Enter age'
               className='form-control'
+              value={age}
               onChange={(e) => setAge(e.target.value)}
             />
           </div>
@@ -64,14 +98,36 @@ const Register = () => {
               id='address'
               placeholder='Enter address'
               className='form-control'
+              value={address}
               onChange={(e) => setAddress(e.target.value)}
             />       
-            </div>   
-            <div className="mb-3">
+          </div>   
+          <div className="mb-3">
+            <label htmlFor='password' className="form-label">Password</label>
+            <div className="input-group">
+              <input
+                type={showPassword ? 'text' : 'password'}
+                id='password'
+                placeholder='Enter password'
+                className='form-control'
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <button 
+                type="button" 
+                className="btn btn-outline-secondary" 
+                onClick={togglePasswordVisibility}
+              >
+                {showPassword ? 'Hide' : 'Show'}
+              </button>
+            </div>
+          </div>   
+          <div className="mb-3">
             <label htmlFor='accountType' className="form-label">Account Type</label>
             <select
               id='accountType'
               className='form-select'
+              value={accountType}
               onChange={(e) => setAccountType(e.target.value)}
             >
               <option value=''>Select Account Type</option>
@@ -80,7 +136,6 @@ const Register = () => {
             </select>
           </div>
           <div className="d-flex justify-content-end">
-            {/* <button className='btn btn-secondary me-2' onClick={() => navigate('/user')}>Back</button> */}
             <button type="submit" className='btn btn-success'>Submit</button>
           </div>
         </form>
